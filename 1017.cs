@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        int tempo = Convert.ToInt32(Console.ReadLine());
-        int distancia = Convert.ToInt32(Console.ReadLine());
+        double tempo = double.Parse(Console.ReadLine());
+        double distancia = double.Parse(Console.ReadLine());
 
         double vel = tempo * distancia / 12;
-        Console.WriteLine((vel).ToString("F3"));
+        Console.WriteLine($"{vel:N3}");
     }
 }
